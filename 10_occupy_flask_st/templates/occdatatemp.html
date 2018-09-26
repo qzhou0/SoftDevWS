@@ -4,20 +4,23 @@
     <title> {{ titl }} </title>
   </head>
   <body>
-    <h1> Here be thine {{ titl }}</h1>
+    <h2> Here be thine {{ titl }}</h2> <!-- result of random occuaption selection-->
     Your occupation is {{ thineOcc }}
+
+    <h2> List of Occupations in the U.S. you see </h2><!--description-->
+    <p> sometime to us provided by Mr. Brooks's courtesy</p>
     <br>
     <table border=1>
       <tr>
-	{% for ind in th %}
-	<th> {{ind}} </th>
+	{% for elem in th %}<!--table heading-->
+	<th> {{elem}} </th>
 	{% endfor %}
       </tr>
       
-      {% for ser in magarita %}
+      {% for subL in superL %}<!--table data-->
       <tr>
-	{% for ind in ser %}
-	<td> {{ind}} </td>
+	{% for elem in subL %}<!-- first is occupation, second rate-->
+	<td> {{elem}} </td>
 	{% endfor %}
       </tr>
       {% endfor %}
