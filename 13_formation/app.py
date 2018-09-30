@@ -6,16 +6,22 @@ K13 -- Echo Echo Echo . . .
 """
 
 from flask import Flask, render_template, request
-
+from random import random
 app = Flask(__name__)
 
 @app.route("/")
 def base():
-    return render_template("input.html")
+    r = random()
+    if r <0.5:
+        method = "POST"
+    else:
+        method = "GET"
+                 
+    return render_template("input.html", meth=method)
 
-@app.route("/auth")
+@app.route("/auth", methods = ["POST", "GET"])
 def authenticate():
-    print(request)
+    #print(request.cookies)
     """    print(app)
     print(request)
     print(request.method)
@@ -23,10 +29,16 @@ def authenticate():
     print(request.args)
     print(request.args['username'])
     print(request.headers)"""
-    word = request.args['words'].rsplit(" ")
+    if (request.method == "POST"):
+        word = request.form['words'].rsplit(" ")
+        usrnm = request.form['username']
+    else:
+        word = request.args['words'].rsplit(" ")
+        usrnm= request.args['username']
+    
     word.reverse()
     return render_template("authresp.html",
-                            username_entered = request.args['username'],
+                            username_entered = usrnm,
                             reply = word,
                             reqmeth=request.method)
 
