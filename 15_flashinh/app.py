@@ -1,11 +1,11 @@
 """
 JaQi-Qian -- Jabir Chowdhury, Qian Zhou
 SoftDev1 pd07
-K14 -- Do I Know You?    this
-2018-10-01
+K15 -- Oh yes, perhaps I do
+2018-10-02
 """
 
-from flask import Flask,render_template,request,session,url_for,redirect
+from flask import Flask,render_template,request,session,url_for,redirect,flash
 import os
 
 app = Flask(__name__)
@@ -18,7 +18,7 @@ def loginPage():
     if "usern" in session:
         # print("user already in session")
         return render_template("homepage.html", user = "usern")
-    return render_template("login.html", error= "")
+    return render_template("login.html")
 
 @app.route("/auth", methods=["POST"])
 def homePage():
@@ -34,13 +34,18 @@ def homePage():
     else:
         # print("Failed login")
         if username_input not in login_credentials:
-            return render_template("login.html", error = "Invalid username, try again!")
+            flash("Invalid username, try again!")
+            return redirect(url_for('loginPage'))
+            #return render_template("login.html")
         else:
-            return render_template("login.html", error = "Invalid password, try again!")
+            flash("Invalid password, try again!")
+            return redirect(url_for('loginPage'))
+            #return render_template("login.html")
 
 @app.route("/logout", methods=["GET"])
 def logOut():
-    session.pop("usern")
+    if ("usern" in session):
+        session.pop("usern")
     return redirect(url_for("loginPage"))
 
 if __name__ == "__main__":
