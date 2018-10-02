@@ -5,13 +5,11 @@
     <title>  </title>
   </head>
   <body>
-    <form action ="/auth" >
-      Username:<br>
-           <input type= "text" name="username"><br>
-
-           Password:<br>
-	   <input type= "password" name="password"> <br>
-           <input type="submit" value="login"  name="login">
+      <form action ="/auth" method="POST" >
+          Username <input type= "text" name="username"><br>
+          Password <input type= "password" name="password"><br>
+          <input type="submit" name="logI" value="login">
       </form>
+        <p>  {{error}} </p>
   </body>
 </html>
