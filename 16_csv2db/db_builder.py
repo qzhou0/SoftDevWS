@@ -13,6 +13,7 @@ DB_FILE="discobandit.db"
 db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops
 
+
 #==========================================================
 #INSERT YOUR POPULATE CODE IN THIS ZONE
 
@@ -26,14 +27,14 @@ c.execute(command)    #run SQL statement
 with open('peeps.csv') as csvfile:
     readerPeeps = csv.DictReader(csvfile)
     for row in readerPeeps:
-	#prepares execute many
-        values = [(row["name"],row["age"],row["id"])]
+		#prepares execute many
+        values = [(row["name"], row["age"], row["id"])]
         command = "INSERT INTO peeps VALUES (?,?,?)" 
         c.executemany(command, values)
 
 
 
-command = "CREATE TABLE courses(name TEXT, age INTEGER, id INTEGER)"
+command = "CREATE TABLE courses(code TEXT, mark INTEGER, id INTEGER)"
 
 #build SQL stmt, save as string
 c.execute(command)
