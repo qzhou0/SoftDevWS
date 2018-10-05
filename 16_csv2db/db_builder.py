@@ -26,7 +26,8 @@ c.execute(command)    #run SQL statement
 with open('peeps.csv') as csvfile:
     readerPeeps = csv.DictReader(csvfile)
     for row in readerPeeps:
-		#prepares execute many
+	#prepares execute many
+        values = [(row["name"],row["age"],row["id"])]
         command = "INSERT INTO peeps VALUES (?,?,?)" 
         c.executemany(command, values)
 
