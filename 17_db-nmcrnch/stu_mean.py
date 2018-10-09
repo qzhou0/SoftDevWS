@@ -109,8 +109,9 @@ def createAvgTable(): #Creates a table of id, avg
     students = stuNames() 
     res = ""
     for stu in students: 
-        cmd = "INSERT INTO peeps_avg VALUES({}, {})".format(name_to_id(stu[0]), get_average(stu[0]))
-        cur = c.execute(cmd)
+        cmd = "INSERT INTO peeps_avg VALUES(?,?)"
+        params = (name_to_id(stu[0]), get_average(stu[0]))
+        cur = c.execute(cmd, params)
     return
 createAvgTable()
 db.commit()
@@ -125,8 +126,9 @@ changeAvrg(9, 199)
 #-----------------------^^ cheating fxn ^^--------------------
 
 def addRowCourses(code, mark, id):# adds a course, a mark, for a id to courses
-    cmd ='INSERT INTO courses VALUES("{_code}", {_mark}, {_id})'.format(_code = code, _mark = mark, _id = id)
-    c.execute(cmd)
+    cmd ='INSERT INTO courses VALUES(?,?,?)'
+    params = (code, mark, id)
+    c.execute(cmd,params)
     changeAvrg(id,get_average(id_to_name(id)))
     return
 
