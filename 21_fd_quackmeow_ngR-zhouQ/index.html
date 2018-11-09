@@ -6,7 +6,7 @@ h<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation 5</title>
     <!-- app.css override -->
-    <link rel="stylesheet" href="css/app.css">
+    <!--<link rel="stylesheet" href="css/app.css">-->
     <!--CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
@@ -20,25 +20,34 @@ h<!DOCTYPE html>
       <!-- heading -->
       <div class="grid-x grid-padding-x">
 	
-	<div class="large-12 cell">
+	<div class="large-4 small-4 cell">
 	  <br>
 	  <h1>Foundation 5</h1>
-	  <br>
+	</div>
+	<div class="large-8 small-8 cell">
+	  <nav class="top-bar">
+	    <ul class="menu align-left">
+	      <li><a href="#fd"><h5> Download</h5></a></li>
+	      <li><a href="#Doc"><h5> Documentation</h5></a></li>
+	      <li><a href="#template"><h5> View Template</h5></a></li>
+	      <li><a href="#CO"><h5>Interesting Features</h5></a></li>
+	      <li><a href="#etc"><h5>Others</h5></a></li>
+	    </ul>
+	  </nav>
 	</div>
       </div>
       
-      <hr>
-
+<hr>
 
       <!-- Foundation Framework-->
-      <div id="Download" class="grid-x grid-padding-x">
+      <div id="fd" class="grid-x grid-padding-x">
 	<div class="cell large-4">
-	  <h4><a href="https://foundation.zurb.com">Foundation Framework</a></h4>
+	  <h3><a href="https://foundation.zurb.com">Foundation Framework</a></h3>
 	</div>
 	
 	<div class="cell large-8"><!--2-->
 	  <p>Foundation is a framework, you can download it <a href="https://foundation.zurb.com/sites/download.html/">here</a>.</p>
-	  <p>File are organized like this:</p>
+	  <p>File are generally organized like this:</p>
 	  <div class="grid-x grid-padding-x"><!--3-->
 	    <div class="cell large-10"><!--4--><pre class="block">foundation/
   ├─ css/
@@ -53,31 +62,31 @@ h<!DOCTYPE html>
 	</div><!-- closes 2-->
       </div>
 
-      <hr>
+<hr>
+      
       <!-- Documentation-->
       <div id="Doc" class="grid-x grid-padding-x">
-	<div class="cell large-4"><h4><a href="https://foundation.zurb.com/sites/docs/">Documentation</a></h4></div>
-	<div class="cell large-8">
-	  <p>All classes you will be referencing can be found <a href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.css">here</a>.<br>Here are some pages of interest.</p>
+	<div class="cell large-4 small-4"><h3><a href="https://foundation.zurb.com/sites/docs/">Documentation</a></h3></div>
+	<div class="cell large-8 small-8">
+	  <p>All classes you will be referencing can be found <a href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.css">here</a>.
+	  <p>Here are some pages of interest:</p>
 	  
 	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-3"><h5><a href="https://foundation.zurb.com/sites/docs/typography-base.html">Base Typography</a></h5>
+	    <div class="cell large-3 small-3"><h5><a href="https://foundation.zurb.com/sites/docs/typography-base.html">Base Typography</a></h5>
 	    </div>
-	    <div class="cell large-9">
+	    <div class="cell large-9 small-9">
 	      <p>For all your text / type needs.</p>
 	    </div>
 	  </div>
 
 	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-3"><h5><a href="https://foundation.zurb.com/sites/docs/xy-grid.html">XY Grid</a></h5>
+	    <div class="cell large-3 small-3"><h5><a href="https://foundation.zurb.com/sites/docs/xy-grid.html">XY Grid</a></h5>
 	    </div>
-	    <div class="cell large-9">
-	      <p>Used for formatting pages.<br><x class="subheader">(It's heavily used in the formatting of this page!)<x></p>
+	    <div class="cell large-9 small-9">
+	      <p>Used for formatting pages. You can see an example <a href="#interesting">here</a>.<br><su class="subheader">(It's also heavily used in the formatting of this page)</su></p>
 	    </div>
 	  </div>
-
-
-	  <p><a href="https://foundation.zurb.com/sites/docs/v/5.5.3/css.html">This</a> is from Foundation 5, but I found it quite helpful and a bit easier to navigate, so you might want to check this out as well.</p>
+	  <p class="subheader">PSST, <a href="https://foundation.zurb.com/sites/docs/v/5.5.3/css.html">this</a> is from Foundation 5, but I found it quite helpful and a bit easier to navigate, so you might want to check this out as well.</p>
 	</div>
       </div>
       
@@ -88,12 +97,13 @@ h<!DOCTYPE html>
       <!-- basic template-->
       <div  class="grid-x grid-padding-x">
 	<div class="cell large-12">
-	  <h4 id="template"><a href="#template">Basic HTML Template</a></h4>
+	  <h3 id="template"><a href="#template">Basic HTML Template</a></h3>
 	  
-	  <p>This is a super basic template that uses CDN. If you have custom CSS, store it in <code>app.css</code> in your <code>css/</code> folder</p>
+	  <p>This is a super basic template that uses <a href="#cdn">CDN</a>.</p>
+	  <p>If you have custom CSS or JS, you can store it in <code>app.css</code> in its respective folder</p>
 	  <br>
 	  <!-- &lt; = <, &gt; = > -->	
-	  <pre class="block">&lt;!DOCTYPE html&gt;
+	  <div class="cell large-6 secondary callout"><pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
       
@@ -102,7 +112,9 @@ h<!DOCTYPE html>
 
       &lt;!-- for custom css --&gt;
       &lt;link rel="stylesheet" href="css/app.css"&gt;
+      &lt;link rel="stylesheet" href="js/app.css"&gt;
 
+      &lt;!-- for custom js --&gt;
       &lt;!-- CDN: so we don't store 7 million copies of frameworks on stuy servers --&gt;
       &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css"&gt; 
       &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js">&lt;/script&gt;
@@ -116,116 +128,176 @@ h<!DOCTYPE html>
       
   &lt;/body&gt;
 &lt;/html&gt;</pre>
+	  </div>
 	</div>
       </div>
-      
       <br>
       
-      <hr>
-
+<hr>
+      <!-- CDN -->
       <div class="grid-x grid-padding-x">
-	<div class="cell large-12"><h4 id="cdn"><a href="#cdn">CDN</a></h4>
-	  <p>We'll be using CDN to access Foundation so we don't have to store a copy of it. </p>
-	  <pre class="block">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css"&gt; 
+	<div class="cell large-12">
+	  <h3 id="cdn"><a href="#cdn">CDN</a></h3>
+	  <p>We'll be using CDN to access Foundation so we don't have to store a copy of it. (It's already included in the template above)</p>
+	  <div class="cell large-6 secondary callout"><pre>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css"&gt; 
       &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js">&lt;/script&gt;
       &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js">&lt;/script&gt;</pre>
+	  </div>
 	</div>
       </div>
       
       <br>
       <hr>
 
-      <!-- Call outs-->
+      <!-- Interesting Features-->
       <div id="CO" class="grid-x grid-padding-x">
-	<div class="cell large-12">
-	  <h4 id="template"><a href="#template">Interesting Features</a></h4>
-	  <p>This is an XY Grid, with different sized cells. Callout has been applied with different coloring and sizes</p>
+	<div class="cell small-12">
+	  <h3 id="CO"><a href="#CO">Interesting Features</a></h3>
+	  <h4> Callout + Colors</h4>
+	  <p>This is an XY Grid, with different sized cells. Callout has been applied with different coloring and sizes.</p>
+	  <p> Adjust the <code> size-number</code> in the class to produce cells that take the number/12 of the total space, with increasing size degrees(small-medium-large) overriding the smaller ones as the window increases in size.</p>
+	  
 	  <br>
-	  <!--row 1-->
-	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-12 large callout text-center">Large Callout<br>12 cell</div>
-	  </div>
-	  <!-- row 2-->
- 	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-6 primary callout text-center">Normal Primary<br>6 cell</div>
-	    <div class="cell large-6 secondary callout text-center">Normal Secondary<br>6 cell</div>
-	  </div>
-	  <!-- row 3-->
- 	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-4 small success callout text-center">Small Success<br>4 cell</div>
-	    <div class="cell large-4 small alert callout text-center">Small Alert<br>4 cell</div>
-	    <div class="cell large-4 small warning callout text-center">Small Warning<br>4 cell</div>
-	  </div>
-	  
-	  <br><br>
-	</div>
-      </div>
-      
-      <!-- Other things-->
-      <div class="grid-x grid-padding-x">
-  
-	<div class="cell large-4">
-	  <h4 id="etc"><a href="#etc">Some Other Links</a></h4>
-	</div>
-  
-	<div class="cell large-auto">
-	  
-	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-3"><h5><a href="https://foundation.zurb.com/building-blocks/">Building Blocks</a></h5></div>
-	    <div class="cell large-9">
-	      <p>Interesting things to look into.</p>
-	    </div>
-	  </div>
-    
-	  <div class="grid-x grid-padding-x">
-	    <div class="cell large-3"><h5><a href="https://foundation.zurb.com/templates.html">Templates</a></h5></div>
-	    <div class="cell large-9">
-	      <p>Templates available for download (with an email wall).</p>
-	    </div>
-	  </div>
-	</div>
-      </div>
+	  <div class="grid-x grid-padding-x grid-margin-x">
+ 	    <div class="cell large-6"> 
+	      <div class="grid-y grid-padding-y"><!-- y-grid-->
 
-      <hr>
-    </div>
-    <div class="grid-container">
-      
-      <div class="grid-x grid-padding-x">
-	<div class="grid-x large-4"><h4> Navigation</h4></div>
-	<div class="cell large-auto">
-	  <div class="grid-x grid-padding-x">
-	    <div class="grid-x large-4"><a href="#Download"><h5> Download</h5></a></div>
-	    <div class="grid-x large-8"><p> Go to download Foundation</p></div>
-	  </div>
-	  <div class="grid-x grid-padding-x">
-	    <div class="grid-x large-4"><a href="#Doc"><h5> Documentation</h5></a></div>
-	    <div class="grid-x large-8>"><p> View Documentation</p></div>
-	  </div>
-	  <div class="grid-x grid-padding-x">
-	    <div class="grid-x large-4"><a href="#template"><h5> View Template</h5></a></div>
-	    <div class="grid-x large-8"> See Template Section of Page</div>
-	  </div>
-	  <div class="grid-x grid-padding-x">
-	    <div class="grid-x large-4"><a href="#CO"><h5>Calling Out</h5></a></div>
-	    <div class="grid-x large-8"> See Calling Out</div>
-	  </div>
-	  <div class="grid-x grid-padding-x">
-	    <div class="grid-x large-4"><a href="#etc"><h5>Others</h5></a></div>
-	    <div class="grid-x large-8"> Some other links</div>
+		<div class="cell  large-12">
+		  <pre class="secondary callout" style="font-size:.75em;">&lt;div class="cell large-12 large callout text-center"&gt;text here&lt;/div&gt;</pre>
+		</div>
+		
+ 		<div class="cell large-12 ">
+		  <pre class="secondary callout" style="font-size:.75em;">
+&lt;div class="cell large-6 small-6 primary callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-6 small-6 secondary callout text-center"&gt;text here&lt;/div&gt;</pre>
+		</div>
+		
+		<div class="cell large-12">
+		  <pre class="secondary callout" style="font-size:.75em;">
+&lt;div class="cell large-4 small-4 small success callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-4 small small-4 alert callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-4 small small-4 warning callout text-center"&gt;text here&lt;/div&gt;</pre>
+		</div>
+	      </div><!-- y-grid-->
+	    </div>
+	  
+	    <div class="grid-x grid-padding-x grid-margin-x large-6"> <!-- CALLOUT GRID -->
+	      <div class="cell large-12 large callout text-center">Large Callout<br>12 cells</div>
+	      <div class="cell large-6 small-6 primary callout text-center">Normal Primary<br>6 cells</div>
+	      <div class="cell large-6 small-6 secondary callout text-center">Normal Secondary<br>6 cells</div>
+	      <div class="cell large-4 small-4 small success callout text-center">Small Success<br>4 cells</div>
+	      <div class="cell large-4 small-4 small alert callout text-center">Small Alert<br>4 cells</div>
+	      <div class="cell large-4 small-4 small warning callout text-center">Small Warning<br>4 cells</div>
+	    </div>
 	  </div>
 	</div>
-      </div>
-      
-	
-<br>
-      <hr><br>
-      <!-- Footer-->
-      <div class="grid-x grid-padding-x">
-	<div class="cell large-12">
-	  <h6 class="subheader text-right">Copyright &copy; 2018 Quackmeow</h6>
+	<div id="cards">  
+	  <br><br>
+	  <hr>
+	  
+	  <!-- Cards -->
+	  <p>
+          <h4>Cards</h4>
+	  </p>
+	    <p>This is an XY Grid with cards.</p>
+            <div class="grid-x grid-padding-x grid-margin-x">
+ 	      <div class="cell large-6 small-6">
+		<pre class="secondary callout" style="font-size:.75em;">&lt;div class="cell large-x"&gt;
+    &lt;div class="card"&gt;
+        &lt;img src="https://media.giphy.com/media/26xBK9cIkUSQ104k8/giphy.gif"&gt;
+        &lt;div class="card-section"&gt;text here&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+	      </div>
+	      
+  	      <div class="cell large-3 small-3">
+		<div class="card">
+		  <img src="https://media.giphy.com/media/26xBK9cIkUSQ104k8/giphy.gif">
+		  <div class="card-section"><p>this is a card</p></div>
+		</div>
+	      </div>
+	      
+ 	      <div class="cell large-3 small-3">
+		<div class="card">
+		  <div class="card-section"><p>the text is in a card section</p></div>
+		  <img src="https://media.giphy.com/media/3oz8xCX30CNCJZigSc/giphy.gif">
+		</div>
+	      </div>
+
+	      <div class="cell large-6 small-6">
+		<pre class="secondary callout" style="font-size:.75em;">&lt;div class="cell large-x"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-section"&gt;
+	      &lt;img src="https://media.giphy.com/media/26xBK9cIkUSQ104k8/giphy.gif"&gt;
+        &lt;/div&gt;
+        &lt;div class="card-section"&gt;text here&lt;/div&gt;
+&lt;/div&gt;
+		  &lt;/div&gt;</pre>
+	      </div>
+	      
+	      <div class="cell large-3 small-3">
+		<div class="card">
+		  <div class="card-section">
+		    <img src="https://media.giphy.com/media/l3q2Okm6SwPwXZqp2/giphy.gif"></div>
+		  <div class="card-section">
+		    <p>now the image is also in a card section</p>
+		  </div>
+		</div>
+	      </div>
+	      
+ 	      <div class="cell large-3 small-3">
+		<div class="card">
+		  <div class="card-section">
+		    <p>you can also put images below the content</p>
+		  </div>
+		  <div class="card-section">
+		    <img src="https://media.giphy.com/media/26xBy4g1eHS1vqZRS/giphy.gif"></div>
+		</div>
+	      </div>
+	    </div>
+	</div><!-- closes cards-->
+      </div><!-- closes #cards -->
+<hr>
+	    
+	    
+	    
+	    <!-- Other things-->
+	    <div class="grid-x grid-padding-x">
+	      
+	      <div class="cell large-4 small-4">
+		<h4 id="etc"><a href="#etc">Some Other Links</a></h4>
+	      </div>
+	      
+	      <div class="cell large-8 small-8">
+		
+		<div class="grid-x grid-padding-x">
+		  <div class="cell large-3 small-3"><h5><a href="https://foundation.zurb.com/building-blocks/">Building Blocks</a></h5></div>
+		  <div class="cell large-9 small-9">
+		    <p>Interesting things to look into.</p>
+		  </div>
+		</div>
+		
+		<div class="grid-x grid-padding-x">
+		  <div class="cell large-3 small-3"><h5><a href="https://foundation.zurb.com/templates.html">Templates</a></h5></div>
+		  <div class="cell large-9 small-9">
+		    <p>Templates available for download (with an email wall).</p></div>
+		</div>
+	      </div>
+	    </div>
+
+
+	  </div>
+
+
 	  <br>
-	</div>
-      </div>
-      
+	  <hr><br>
+	  <!-- Footer-->
+	  <div class="grid-x grid-padding-x">
+	    <div class="cell large-12">
+	      <h6 class="subheader text-right">Copyright &copy; 2018 Quackmeow</h6>
+	      <br>
+	    </div>
+	  </div>
+	  
   </body>
 </html>
