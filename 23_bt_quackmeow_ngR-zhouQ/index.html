@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap | Quackmeaow</title>
+    <!--CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+  
+  <!--start grid-->
+  <!-- heading navbar -->
+  <nav class="navbar-dark top">
+    <a  class="btn" href="#fd"> Download</a>
+    <a  class="btn" href="#Doc">Documentation</a>
+    <a  class="btn" href="#template">View Template</a>
+    <a  class="btn" href="#CO">Interesting Features</a>
+    <a  class="btn" href="#etc">Others</a>
+  </nav>
+  <div class="container">
+  <h1>Bootstrap</h1>
+
+
+    
+<hr>
+
+
+    <!-- Bootstrap Framework-->
+    <div class="container">
+    <div id="fd" class="row">
+      <div class="col-4">
+	<h3><a href=" http://getbootstrap.com">Bootstrap Framework</a></h3>
+      </div>
+      <div class="col-8">
+	<p>Bootstrap is a framework, you can download it <a href="http://getbootstrap.com/docs/4.1/getting-started/download/">here</a>.</p>
+	<p>We'll be using <a href="#cdn">CDN</a> to access Foundation, so while downloading it isn't necessary, the index in the .zip is a nice example to look at.</p>
+      </div>
+    </div>
+    </div><!--bt-->
+
+
+    
+<hr>
+
+
+    <!-- Documentation-->
+    <div class="container">
+    <div id="Doc" class="row">
+      <div class="col-4"><h3><a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">Documentation</a></h3></div>
+      <div class="col-8">
+	<p>Here are some pages of interest:</p>
+	<div class="row">
+	  <div class="col-3">
+	    <h5><a href="https://getbootstrap.com/docs/4.1/content/typography/">Typography</a></h5>
+	    <!--<div class="dropdown">
+	      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Content
+	      </button>
+	      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/content/typography/">Typography</a>
+		<a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/content/code/">Code</a>
+		<a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/content/images/">Images</a>
+		<a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/content/tables/">Tables</a>
+		<a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/content/figures/">Figures</a>
+	      </div>
+	    </div>-->
+	  </div>
+	  <div class="col-9">
+	    <p>For all your text / type needs.</p>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-3"><h5><a href="https://getbootstrap.com/docs/4.1/layout/grid/">Grid</a></h5></div>
+	  <div class="col-9">
+	    <p>Used for formatting pages. You can see an example <a href="#interesting">here</a>.<br><su class="subheader">(It's also heavily used in the formatting of this page)</su></p>
+	  </div>
+	</div>
+      </div>
+    </div>
+    </div><!-- documentation -->
+
+    
+
+    <hr>
+
+
+    <!-- basic template-->
+
+    <h3 id="template"><a href="#template">Basic HTML Template</a></h3>
+    
+  <p>This is a super basic template that uses <a href="#cdn">CDN</a>.</p>
+  <pre class="alert-secondary"><xmp><!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
+  </xmp></pre>
+  <br><!--basic template???-->
+
+    
+    <hr>
+
+    
+    <!-- CDN -->
+    <h3 id="cdn"><a href="#cdn">CDN</a></h3>
+  <p>We'll be using CDN to access Bootstrap so we don't have to store a copy of it.</p>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <pre style="background-color: lightgrey;"><xmp><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></xmp></pre><!-- cdn-->
+    </div>
+  </div>
+  </div>
+
+  
+    <hr>
+
+      
+    <!-- Interesting Features-->
+    <h3 id="CO"><a href="#CO">Interesting Features</a></h3><br>
+    <h4>Grid</h4> <!-- XY GRID -->
+  <p>Some styling has been added so you can see the grid</p>
+  <div class="container">
+  <div class="row">
+    <div class="col-6"> 
+      <pre class="bg-light">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+	&lt;div class="col-12"&gt;text here&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+	&lt;div class="col-6"&gt;text here&lt;/div&gt;
+	&lt;div class="col-3"&gt;text here&lt;/div&gt;
+	&lt;div class="col-3"&gt;text here&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+	&lt;div class="col-sm"&gt;repetitions up to twelve; may overspill due to size&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+    <div class="col-6">
+      <div class="row">
+	<div class="col text-center" style="border: 1px solid #cacaca;">12</div>
+      </div>
+  
+    
+      <div class="row">
+	<div class="col-6 text-center" style="border: 1px solid #cacaca;">6</div>
+	<div class="col-3 text-center" style="border: 1px solid #cacaca;">3</div>
+	<div class="col-3 text-center" style="border: 1px solid #cacaca;">3</div>
+      </div>
+      <div class="row">
+	<div class="col-sm" style="border: 1px solid #cacaca;">
+	  One of three columns
+	</div>
+	<div class="col-sm"style="border: 1px solid #cacaca;">
+	  One of three columns
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">
+	  One of three columns
+	</div>
+      </div>
+      <div class="row">
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm"style="border: 1px solid #cacaca;">1/12</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm"style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm"style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm"style="border: 1px solid #cacaca;">1/12
+	</div>
+	<div class="col-sm" style="border: 1px solid #cacaca;">1/12
+	</div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- GRID -->
+	
+	<br><br>
+
+
+	<!-- COLORS -->
+	<h4>Colors</h4>
+  <p>This is an Grid, with different sized cells. Colors has been applied with different sizes.</p>
+  <p> Adjust the <code> size-number</code> in the class to produce cells that take the number/12 of the total space, with increasing size degrees(small-medium-large) overriding the smaller ones as the window increases in size.</p>
+  <div class="container">
+  <div class="row">
+    <div class="col-6">
+      <!-- need cg-->
+	<pre class="alert-secondary">&lt;div class="col callout text-center"&gt;text here&lt;/div&gt;</pre>
+    </div>
+    <div class="col-6">
+      <div class="row">
+	<div class="col text-black alert text-center">Alert<br>12 cells</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <pre class="alert-secondary">
+&lt;div class="cell large-6 small-6 primary callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-6 small-6 secondary callout text-center"&gt;text here&lt;/div&gt;</pre>
+    </div>
+    <div class="col-6">
+      <div class="row">	      
+	<div class="col-6 text-center alert-primary">Background Primary<br>6 cells</div>
+	<div class="col-6 alert-secondary text-center">Background Secondary<br>6 cells</div>
+      </div>	       
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <pre class="alert-secondary">
+&lt;div class="cell large-4 small-4 small success callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-4 small small-4 alert callout text-center"&gt;text here&lt;/div&gt;
+&lt;div class="cell large-4 small small-4 warning callout text-center"&gt;text here&lt;/div&gt;</pre>
+    </div>
+    <div class="col-6">
+      <div class="row">
+	<div class="col alert-success text-center">Alert Success<br>4 cells</div>
+	<div class="col alert-alert text-center"> Alert Alert<br>4 cells</div>
+	<div class="col alert-warning text-center">Alert Warning<br>4 cells</div>
+      </div>      
+    </div>
+  </div>
+  </div><!-- Color CODE -->
+  <div id="cards"><!-- Cards -->
+    
+	  <br><br><hr>
+	  
+	  
+
+          <h4>Cards</h4>
+    <p>This is a Grid with cards.</p>
+	  
+    <div class="container">
+    <div class="row"> 
+      <div class="col-6"><!-- CODE FOR IMG W/O CARD-SECTION -->
+	<pre class="alert-secondary"><xmp>
+	    <div class="card">
+	      <img class="card-img-top" src="https://media.giphy.com/media/26xBK9cIkUSQ104k8/giphy.gif">
+	      <div class="card-body">
+		<p>this is a card</p>
+	      </div>
+	    </div>
+	</xmp></pre>
+      </div>
+      <div class="col-3">
+	<div class="card">
+	  <img class="card-img-top" src="https://media.giphy.com/media/26xBK9cIkUSQ104k8/giphy.gif">
+	  <div class="card-body">
+	    <p>this is a card</p>
+	  </div>
+	</div>
+      </div>
+      <div class="col-3">
+	<div class="card">
+	  <div class="card-body">
+	    <p>the text is in a card-header</p>
+	  </div>
+	  <img class="card-img" src="https://media.giphy.com/media/3oz8xCX30CNCJZigSc/giphy.gif">
+	</div>	
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-6"><!-- CODE FOR IMG W/ List-Groups -->
+	<pre class="alert-secondary"><xmp>
+	<div class="card">
+	  <ul class="list-group"><!--need cg-->
+	    <li class="list-group-item"><img class="card-img"src="https://media.giphy.com/media/l3q2Okm6SwPwXZqp2/giphy.gif"></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	  </ul>
+	</div>	    
+	</xmp></pre>
+      </div>
+	      
+      <div class="col-3">
+	<div class="card">
+	  <ul class="list-group"><!--need cg-->
+	    <li class="list-group-item"><img class="card-img"src="https://media.giphy.com/media/l3q2Okm6SwPwXZqp2/giphy.gif"></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	    <li class="list-group-item">
+	      <p>now the image is also in a list-group-item</p></li>
+	  </ul>
+	</div>
+      </div>
+      <div class="col-3">
+	<div class="card">
+	  <ul class="list-group"><!--need cg-->
+	    <li class="list-group-item">
+	      <p>you can also put images below the content</p></li>
+	    <li class="list-group-item"><img class="card-img" src="https://media.giphy.com/media/26xBy4g1eHS1vqZRS/giphy.gif"></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6"> <!-- CODE FOR CARD-Body -->
+	<pre class="alert-secondary"><xmp>
+	    <div class="card">
+	      <div class="card-header"><h5>this is a card header</h5></div>
+	      <div class="card-body">
+		<p>This is a card body</p>
+	      </div>
+	      <div class="card-body">
+		<p>this is another card body</p>
+	      </div>
+	      <div class="card-footer">
+		<p>or a footer</p>
+	      </div>
+	    </div>
+</xmp></pre>
+      </div>
+      <div class="col">
+	<div class="card">
+	  <div class="card-header"><h5>this is a card header</h5></div>
+	  <div class="card-body">
+	    <p>This is a card body</p>
+	  </div>
+	  <div class="card-body">
+	    <p>this is another card body</p>
+	  </div>
+	  <div class="card-footer">
+	    <p>or a footer</p>
+	  </div>
+	</div>
+      </div>
+
+      <div class="col">
+	<div class="card">
+	  <div class="card-body">
+	    card bodies
+	  </div>
+	  <div class="card-body">
+	    <p>can be used</p>
+	  </div>
+	  <div class="card-body">
+	    <p>to break</p>
+	  </div>
+	  <div class="card-body">
+	    <p>stuff up... just like list groups</p>
+	  </div>
+	</div>
+      </div>
+    </div>
+    </div>
+
+    <!-- INTERESTING FEATURES -->
+    
+
+    
+    <hr>
+	    
+	        
+    <!-- Other things-->
+    <div class="container">
+    <div class="row">
+      <div class="col-4">
+	<h4 id="etc"><a href="#etc">Some Other Links</a></h4>
+      </div>
+      <div class="col">
+	<div class="row">
+	  <div class="col-3"><h5><a href="https://getbootstrap.com/docs/4.1/components/alerts/">Building Blocks</a></h5></div>
+	  <div class="col-9">
+	    <p>Interesting things to look into.</p>
+	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="col-3"><h5><a href="https://getbootstrap.com/docs/4.1/examples/">Examples</a></h5></div>
+	  <div class="col-9">
+	    <p>Examples of Bootstrap layout to check out. (Click in, then <Code>Ctr-U</code>)</p></div>
+	</div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br>
+  <hr><br>
+  <!-- Footer-->
+  <div class="row">
+    <div class="col">
+      <h6 class="subheader text-right">Copyright &copy; 2018 Quackmeow</h6>
+      <br>
+    </div>
+    
+  </div>
+  </div>
+
+
+
+
+  
+</body>
+</html>
