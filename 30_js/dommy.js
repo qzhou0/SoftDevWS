@@ -14,13 +14,23 @@ var fibbonaci = (n)=>{
     }
 };
 
+var dynFib = (n) => {
+    lastTwo = [0,1];
+    if (n < 2) return lastTwo[n];
+    for (i =2; i<n;i++){
+	lastTwo[i%2]=lastTwo[(i+1)%2]+lastTwo[i%2];
+    }
+    return lastTwo[0]+lastTwo[1];
+};
 
 
+/* page changing */
 var h = document.getElementById('h');//heading
 var tl = document.getElementById("thelist");//thelist
 
 
 /* event listener adder for thelist */
+//modular design
 var paideuetai=(i, elem)=>{
     elem[i].addEventListener('mouseover', function(){
 	h.innerHTML = (this.innerHTML);//changes to this content
@@ -34,6 +44,7 @@ var paideuetai=(i, elem)=>{
     });
 }
 // indoctrination for the firstborn
+// go through all children already there and add eventlistener
 for (i = 0; i<tl.children.length; i++){
     paideuetai(i,tl.children);
 }
@@ -59,7 +70,8 @@ var fibs = document.getElementById("fiblist");
 var fibBtn = document.getElementById("fb");
 var currFibIndex = 1;
 fibBtn.addEventListener('click', function (e){
-    w = newItem(fibbonaci(currFibIndex));
+    w = newItem(dynFib(currFibIndex));
     currFibIndex+=1;
     fibs.appendChild(w);
 });
+
